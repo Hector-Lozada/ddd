@@ -4,7 +4,7 @@ import { DollarSign, LineChart, Percent } from "lucide-react";
 export const dataCardsSummary = [
   {
     icon: DollarSign,
-    total: "200,000.00",
+    total: "$ 200,000.00",
     title: "Capital",
     average: 100,
     tooltipText: "Initial Capital",
