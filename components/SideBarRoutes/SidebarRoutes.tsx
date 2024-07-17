@@ -13,6 +13,25 @@ export default function SidebarRoutes() {
                 ))}
             </div>
             <Separator/>
+            <div className='p-2 md:p-6'>
+                <p>TOOLS</p>
+                {dataToolsSidebar.map((item)=>(
+                    <SiderbanItem key={item.label} item={item}/>
+                ))}
+            </div>
+            <Separator/>
+            <div className='p-2 md:p-6'>
+                <p>SUPPORT</p>
+                {dataSupportSidebar.map((item)=>(
+                    <SiderbanItem key={item.label} item={item}/>
+                ))}
+            </div>
+            <Separator/>
+        </div>
+        <div>
+            <footer className='mt-3 p-3 text-center'>
+                2024. All rights reserved
+            </footer>
         </div>
     </div>
   )
