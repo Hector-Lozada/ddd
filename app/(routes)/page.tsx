@@ -1,6 +1,5 @@
-import { UserButton } from "@clerk/nextjs";
 import { CardSummary } from "./components/CardSummary";
-import { BookOpenCheck, DollarSign, LineChart, Percent, UserRound, Waypoints } from "lucide-react";
+import { DollarSign, LineChart, Percent } from "lucide-react";
 
 export const dataCardsSummary = [
   {
@@ -29,9 +28,8 @@ export const dataCardsSummary = [
 export default function Home() {
   return (
     <div>
-      <UserButton/>
-      <h2 className="text-2xl mb-4">Track Record</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-x-20">
+      <h2 className="text-2xl mb-4 font-bold">Track Record</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-x-20 font-semibold">
         {dataCardsSummary.map(({icon, total, title, average, tooltipText}) => (
           <CardSummary 
             key={title}
