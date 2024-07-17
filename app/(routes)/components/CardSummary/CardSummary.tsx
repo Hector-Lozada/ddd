@@ -2,6 +2,7 @@ import { CustomIcon } from "@/components/CustomIcon";
 import { CardSummaryProps } from "./CardSummary.types";
 import { CustomTooltip } from "@/components/CustomTooltip/CustomTooltip";
 import { cn } from "@/lib/utils";
+import { MoveDownRight, MoveUpRight } from "lucide-react";
 
 export  function CardSummary(props: CardSummaryProps) {
     const {average, icon:Icon, title, tooltipText, total} = props;
@@ -16,8 +17,15 @@ export  function CardSummary(props: CardSummaryProps) {
         </div>
         <div className="flex gap-4 mt-2 md:mt-4">
             <p className="text-2xl font-semibold">{total}</p>
-            <div className="flex gap-1 px-2 items-center rounded-lg bg-black text-white  ">
+            <div className={cn(`flex items-center gap-1 px-2 text-xs text-white rounded-lg h-[20px] bg-black dark:bg-secondary`)}>
                 {average}%
+
+                {average < 20 &&(
+                    <MoveDownRight strokeWidth={2} className="size-4"/>
+                )}
+                {average > 20 && average <= 100 &&(
+                    <MoveUpRight strokeWidth={2} className="size-4"/>
+                )}
             </div>
         </div>
     </div>

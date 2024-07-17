@@ -19,8 +19,9 @@ export const dataCardsSummary = [
   },
   {
     icon: Percent,
-    total: "100",
+    total: "100%",
     title: "Winrate",
+    average: 100,
     tooltipText: "Efectividad de la estrategia",
   },
 ]
