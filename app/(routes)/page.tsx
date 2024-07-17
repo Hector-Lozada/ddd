@@ -12,16 +12,15 @@ export const dataCardsSummary = [
   },
   {
     icon: LineChart,
-    total: " $15,500.23",
+    total: "$ 15,500.23",
     title: "P&L",
     average: 100,
     tooltipText: "Profit",
   },
   {
     icon: Percent,
-    total: "100%",
+    total: "100",
     title: "Winrate",
-    average: 100,
     tooltipText: "Efectividad de la estrategia",
   },
 ]
