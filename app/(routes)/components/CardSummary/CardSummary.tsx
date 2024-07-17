@@ -9,7 +9,7 @@ export  function CardSummary(props: CardSummaryProps) {
   return (
     <div className="shadow-sm bg-background rounded-lg p-5 py-3 hover:shadow-lg transition">
         <div className="flex justify-between">
-            <div className="flex gap-x2 items-center">
+            <div className="flex gap-x-3 items-center">
                 <CustomIcon icon={Icon} />
                 {title}
             </div>

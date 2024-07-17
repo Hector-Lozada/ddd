@@ -2,6 +2,7 @@ import { Input } from "@/components/ui/input"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { UserButton } from "@clerk/nextjs"
 import { Menu, Search } from "lucide-react"
+import SidebarRoutes from "../SideBarRoutes/SidebarRoutes"
 
 export  function NavBar() {
   return (
@@ -12,7 +13,7 @@ export  function NavBar() {
                     <Menu/>
                 </SheetTrigger>
                 <SheetContent side="left">
-                    <p>Sidebar Router</p>
+                    <SidebarRoutes/>
                 </SheetContent>
             </Sheet>
         </div>
@@ -20,7 +21,7 @@ export  function NavBar() {
             <Input placeholder="Search..." className="rounded-lg"/>
             <Search strokeWidth={1} className="absolute top-2 right-2"/>
         </div>
-        <div className="flex gap-x-2 items-center">
+        <div className="flex gap-x-4 items-center">
             <p>Toogle</p>
             <UserButton/>
         </div>
